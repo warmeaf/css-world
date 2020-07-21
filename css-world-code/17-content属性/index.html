@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            content: url(./logo_02.png);
+            width: 100px;
+            height: 100px;
+        }
+        
+        h1 {
+            content: url(./logo_02.png);
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+        
+        div::before {
+            /* 伪元素中，content图片生成无法通过css改变固有尺寸 */
+            /* 也就是说这里的宽高设置无效 */
+            content: url(./logo_02.png);
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <img>图片旁边有一些文字。
+    <h1>logo</h1>
+    <div></div>
+</body>
+
+</html>

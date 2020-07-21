@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>相邻兄弟元素，最终计算值为20px</div>
+    <p style="margin-bottom: 50px;">第一行</p>
+    <p style="margin-top: -30px;">第二行</p>
+
+    <div>父子margin合并，最终计算值为20px</div>
+    <div style="margin-top: -30px;">
+        <div style="margin-top: 50px;">child</div>
+    </div>
+
+    <div>空块级元素自身margin合并，最终计算值为20px，也就是自身占用空间为20px</div>
+    <div style="margin-top: 50px;margin-bottom: -30px;"></div>
+</body>
+
+</html>

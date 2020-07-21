@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/css">
+        dot {
+            display: inline-block;
+            height: 1em;
+            line-height: 1em;
+            vertical-align: -.25em;
+            overflow: hidden;
+        }
+        
+        dot::before {
+            content: "...\a..\a.";
+            display: block;
+            white-space: pre;
+            animation: dot 3s infinite step-start both;
+            /* 对伪元素执行动画名称是其自身 动画时长 播放次数 时序函数 动画填充模式 */
+        }
+        
+        @keyframes dot {
+            33% {
+                transform: translateY(-2em);
+            }
+            /* 动画从总时长的33%处开始，与step-start有关*/
+            66% {
+                transform: translateY(-1em);
+            }
+        }
+        
+        span {
+            display: inline-block;
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    正在加载x
+    <dot>...</dot>
+    <span>fs...</span>
+</body>
+
+</html>

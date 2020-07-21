@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul,
+        li {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .p {
+            width: 70px;
+            background-color: cornsilk;
+            line-height: 20px;
+        }
+        
+        .d {
+            position: absolute;
+            width: 60px;
+            background-color: darkgoldenrod;
+            color: #ffffff;
+            visibility: hidden;
+        }
+        
+        .p:hover>.d {
+            /* 此时从上往下hover，第二行的hover被覆盖掉 */
+            visibility: visible;
+            /* 设置延时后可解决这个问题 */
+            transition: visibility 0s .2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p">
+        操作
+        <ul class="d">
+            <li>删除</li>
+            <li>编辑</li>
+        </ul>
+    </div>
+    <div class="p">
+        栏目
+        <ul class="d">
+            <li>你好</li>
+            <li>我们</li>
+        </ul>
+    </div>
+</body>
+
+</html>

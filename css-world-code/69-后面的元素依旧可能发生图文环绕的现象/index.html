@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 500px;
+            overflow: hidden;
+            /* 设置该属性可彻底清除浮动元素带来的影响，不会出现图文环绕的现象 */
+        }
+        
+        img {
+            float: left;
+        }
+        /* .father::after {
+            content: '';
+            display: block;
+            clear: both;
+        } */
+        
+        .bottom {
+            margin-top: -2px;
+            /* 依旧发生图文环绕效果 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <img src="../img/logo_02.png" alt="">
+        <div>this is some text</div>
+    </div>
+    <div class="bottom">bottom text</div>
+</body>
+
+</html>

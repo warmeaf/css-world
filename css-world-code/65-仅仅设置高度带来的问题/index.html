@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            height: 70px;
+        }
+        
+        .float {
+            float: left;
+        }
+        /* 实际上float的高度并不是70px，因为幽灵空白节点
+        然后就影响到了后面的文字，表现出环绕效果 */
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="float">
+            <img src="logo_02.png" alt="">
+        </div>
+    </div>
+    <div>this is text</div>
+</body>
+
+</html>

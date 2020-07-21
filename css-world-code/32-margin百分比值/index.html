@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            background-color: goldenrod;
+            overflow: hidden;
+        }
+        
+        .box>div {
+            margin: 50%;
+            /* 由于margin合并，.box不是一个1：1的正方形，而是一个2：1的长方形 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div></div>
+    </div>
+</body>
+
+</html>

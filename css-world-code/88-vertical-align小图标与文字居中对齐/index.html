@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 14px;
+            line-height: 1.42858;
+        }
+        
+        img {
+            /* vertical-align: .6ex; */
+            /* 如果文字字号较小，图片上移动改变了行框盒子的高度 */
+            /* 至于为什么是.6ex，应该是计算后得到数值 */
+            vertical-align: .6ex;
+            position: relative;
+            top: 8px;
+        }
+        
+        html {
+            font: menu;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        文字
+        <img src="../img/wran-thin.png" alt="">
+    </p>
+</body>
+
+</html>

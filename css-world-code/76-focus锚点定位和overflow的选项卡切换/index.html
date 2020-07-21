@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            height: 2000px;
+        }
+        
+        .box {
+            width: 20em;
+            height: 10em;
+            border: 1px solid #ddd;
+            margin-top: 100px;
+            overflow: hidden;
+        }
+        
+        .box>.list {
+            position: relative;
+            height: 100%;
+            background: #ddd;
+            /* text-align: center; */
+        }
+        
+        .box>.list>input {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            clip: rect(0 0 0 0);
+        }
+        
+        .click {
+            display: inline-block;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.42858;
+            width: 20px;
+            margin: 0 4px;
+            background-color: #cccccc;
+        }
+        
+        .active {
+            background-color: #000000;
+            color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="list"><input id="one" readonly>1</div>
+        <div class="list"><input id="two" readonly>2</div>
+        <div class="list"><input id="three" readonly>3</div>
+        <div class="list"><input id="four" readonly>4</div>
+    </div>
+    <div class="link">
+        <label class="click active" for="one">1</label>
+        <label class="click" for="two">2</label>
+        <label class="click" for="three">3</label>
+        <label class="click" for="four">4</label>
+    </div>
+    <script>
+        // const clicks = document.getElementsByClassName('click');
+        // for (let i = 0; i < clicks.length; i++) {
+        //     clicks[i].onclick = function() {
+        //         this.index = i;
+        //         for(let j = 0; j < clicks.length; j++) {
+        // 			clicks[j].removeAttribute
+        // 		}
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

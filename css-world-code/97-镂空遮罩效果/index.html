@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            position: relative;
+            overflow: hidden;
+            line-height: 0px;
+            width: 500px;
+        }
+        
+        .crop-area {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            cursor: move;
+            outline: 500px solid rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <img src="../images/beat.jpg" alt="">
+        <div class="crop-area"></div>
+    </div>
+</body>
+
+</html>

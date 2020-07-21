@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: antiquewhite;
+            /* float: left; */
+        }
+        
+        .father>div {
+            float: left;
+        }
+        
+        .child {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 200px;
+            margin-right: 10px;
+            background-color: chartreuse;
+        }
+        /* 定高容器的子元素的margin-bottom或者宽度定死的子元素的margin-right失效 */
+        /* 但是会影响其兄弟元素 */
+        
+        li {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="child"></div>
+        <div style="width: 50px;margin-left: 10px;">ni</div>
+    </div>
+    <li></li>
+</body>
+
+</html>

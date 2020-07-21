@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            visibility: hidden;
+            width: 200px;
+            overflow: hidden;
+        }
+        
+        .main {
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: bisque;
+            visibility: visible;
+        }
+        
+        .preview {
+            width: 70px;
+            height: 70px;
+            margin-left: 130px;
+            margin-top: 15px;
+            background-color: brown;
+        }
+        
+        .out {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .fadeOut {
+            height: 300px;
+            background-color: chocolate;
+            /* opacity: 0; */
+            visibility: hidden;
+            /* transition: opacity .25s; */
+            transition: visibility .5s;
+        }
+        
+        .out:hover>.fadeOut {
+            visibility: visible;
+            /* opacity: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <li>
+        父级容器.wrap默认visibility为hidden，这样预览区域.preview也默认为hidden
+        <br /> 等图片加载完成之后设置父级容器为visible
+    </li>
+    <div class="wrap">
+        <div class="main">
+            裁剪主区域，正常显示
+        </div>
+        <div class="preview">
+            预览区域，图片未加载不显示
+        </div>
+    </div>
+
+    <li>淡出效果</li>
+    <li>值得注意的是visibility为hidden的元素本身hover时不会有任何效果</li>
+    <div class="out">
+        <div class="fadeOut">
+            hover之后显示
+        </div>
+    </div>
+    <script>
+        var wr = document.getElementsByClassName('wrap')[0];
+
+        setTimeout(() => {
+            wr.style.visibility = 'visible';
+        }, 2000);
+        // 延时2秒，模拟图片加载完成后预览区域显示
+    </script>
+</body>
+
+</html>

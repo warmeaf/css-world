@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#wrap{
+				border: 10px solid #AE34CF;
+			}
+			#wrap::after{
+				content: '';
+				display: block;
+				/* 或者如下,只要是块级元素就行
+				display: table; */
+				clear: left;
+			}
+			.item{
+				float: left;
+				width: 100px;
+				height: 100px;
+				background-color: #333333;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="item"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.content::before{
+				content: url(./logo_02.png);
+				display: block;
+				width: 300px;
+				height: 300px;
+				/* 这里的display、width和height是针对content内容的设置 */
+				/* 虽然这里已经设置了300px的宽高,但是图片仍然按照固有尺寸显示 */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">this is a img</div>
+	</body>
+</html>

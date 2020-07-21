@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            font-size: 14px;
+            line-height: 1.42858;
+            height: 20px;
+            width: 300px;
+            border: 1px solid #dddddd;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            /* 单行文本点点点效果 */
+        }
+        
+        .rows-2 {
+            height: 40px;
+            width: 300px;
+            line-height: 1.42858;
+            border: 1px solid #dddddd;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            /* 多行文本点点点效果 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.
+    </div>
+    <li></li>
+    <div class="rows-2">
+        this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.
+    </div>
+</body>
+
+</html>

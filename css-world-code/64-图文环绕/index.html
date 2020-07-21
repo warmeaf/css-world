@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 200px;
+        }
+        
+        .img {
+            float: left;
+            /* 父容器高度塌陷，内联元素（文字部分）不会与浮动元素重叠，而是跟随浮动元素 */
+        }
+        
+        p {
+            padding: 0px;
+            margin: 0px;
+            margin-left: -80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="father">
+            <img src="logo_02.png" alt="" class="img">
+        </div>
+        <p>
+            这是一段文字。这是一段文字。这是一段文字。这是一段文字。这是一段文字。这是一段文字。这是一段文字。
+        </p>
+    </div>
+</body>
+
+</html>

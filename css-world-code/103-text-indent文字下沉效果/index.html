@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            display: inline-block;
+            /* width: 50px; */
+            height: 50px;
+            border-radius: 50%;
+            background-color: darkgoldenrod;
+            color: #ffffff;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .vertical-mode {
+            writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            /* 此时text-indent、text-align都作用在了垂直方向
+            line-height作用在了水平方向 */
+        }
+        
+        .btn:active {
+            text-indent: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="javascript:" class="btn vertical-mode">按</a>
+</body>
+
+</html>

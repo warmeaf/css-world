@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.wrap{
+				width: 100px;
+				overflow: hidden;
+			}
+			.content{
+				display: inline-block;
+				background-color: #333333;
+				color: #FFFFFF;
+				white-space: nowrap;
+				/* white-space: nowrap;声明是关键 */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="content">
+				<!-- .content的宽度由第二行的最大连续内敛盒子决定 -->
+				<p>你们好</p>
+				我是一个大<span>帅哥</span><a href="">很帅很帅的那种</a><br />
+				哈哈哈
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+            border: 1px solid #333333;
+            padding: 4px;
+        }
+        
+        .wrap {
+            width: 200px;
+            height: 100px;
+            background-color: royalblue;
+        }
+        
+        .text {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 绝对定位元素的宽度自适应相对于包含块 -->
+    <!-- 而.container的高度塌陷体现了绝对定位元素的破坏性 -->
+    <div class="container">
+        <div class="wrap">
+            <div class="text">
+                this some text.this some text.this some text.this some text.this some text.this some text.this some text.this some text.this some text.this some text.this some text.this some text.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

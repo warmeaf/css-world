@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				list-style: none;
+			}
+			.wrap{
+				position: relative;
+				width: 120px;
+				height: 70px;
+				overflow: hidden;
+				margin: 30px auto;
+			}
+			.wrap>ul{
+				/* 这里ul的宽度根据最大连续内联盒子的宽度计算 */
+				position: absolute;
+				white-space: nowrap;
+			}
+			.wrap>ul>li{
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap" class="wrap">
+		  <ul>
+		    <li><img src="logo_02.png"></li>
+		    <li><img src="logo_02.png"></li>
+		    <li><img src="logo_02.png"></li>
+		    <li><img src="logo_02.png"></li>
+		    <li><img src="logo_02.png"></li>
+		  </ul>
+		</div>
+		<script src="iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			new IScroll('#wrap', {
+			  scrollbars: true,
+			  scrollX: true,
+			  scrollY: false
+			});
+		</script>
+	</body>
+</html>

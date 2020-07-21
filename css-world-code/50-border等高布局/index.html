@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 300px;
+            background-color: wheat;
+            border-left: 150px solid #333333;
+        }
+        
+        .wrap::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+        /* 清除nav浮动带来的影响，避免增加h3元素后撑不开.wrap容器  */
+        
+        nav {
+            width: 150px;
+            float: left;
+            margin-left: -150px;
+        }
+        
+        nav>h3 {
+            padding: 0;
+            margin: 0;
+            line-height: 40px;
+            color: #ffffff;
+        }
+        
+        section>p {
+            padding: 0;
+            margin: 0;
+            line-height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <nav>
+            <h3>导航一</h3>
+            <h3>导航二</h3>
+            <h3>导航三</h3>
+        </nav>
+        <section>
+            <p>模块一</p>
+            <p>模块二</p>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap {
+            width: 400px;
+            overflow: scroll;
+            /* 出现滚动条 */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="content"></div>
+    </div>
+    <script>
+        console.log(400 - document.getElementById('content').clientWidth);
+        // 输出17像素
+    </script>
+</body>
+
+</html>

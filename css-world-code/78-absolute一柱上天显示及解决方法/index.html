@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        .wrap {
+            width: 20px;
+            height: 20px;
+            background-color: royalblue;
+            position: relative;
+        }
+        
+        .content {
+            font-size: 14px;
+            line-height: 1.42858;
+            position: absolute;
+            color: #ffffff;
+            background-color: #000000;
+            top: 30px;
+            text-align: center;
+            /* 此时文字两字一柱擎天 */
+            /* 原因是包含块的宽度太小 */
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="content">文字</div>
+    </div>
+</body>
+
+</html>

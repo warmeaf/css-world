@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.wrap{
+				/* 此时内容区域为100px宽度 */
+				width: 160px;
+				padding: 30px;
+				background-color: red;
+				box-sizing: border-box;
+			}
+			.content{
+				width: 100%;
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="content">
+				非绝对定位百分比宽度值100px，相对于content-box
+			</div>
+		</div>
+		<li></li>
+		<div class="wrap" style="position: relative;height: 160px;">
+			<div class="content" style="position: absolute;height: 100%;">
+				绝对定位百分比宽度值160px，相对于padding-box
+			</div>
+		</div>
+	</body>
+</html>

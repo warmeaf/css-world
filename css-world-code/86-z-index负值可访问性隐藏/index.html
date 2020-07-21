@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 70px;
+            height: 70px;
+            background-color: #ffffff;
+        }
+        
+        .wrap h2 {
+            margin: 0px;
+            position: absolute;
+            /* 此时文字在上，图片在下 */
+            z-index: -1;
+            /* 此时文字在下，图片在上 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h2>头像</h2>
+        <img src="../img/logo_02.png" alt="">
+    </div>
+</body>
+
+</html>

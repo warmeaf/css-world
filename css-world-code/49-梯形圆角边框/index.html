@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: tomato;
+            position: relative;
+        }
+        
+        div::before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            border: 2px solid;
+            border-color: transparent transparent tomato;
+            top: -4px;
+        }
+        
+        div::after {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            border: 2px solid;
+            border-color: tomato transparent transparent;
+            bottom: -4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        有个梯形圆角边框
+    </div>
+    <li></li>
+</body>
+
+</html>

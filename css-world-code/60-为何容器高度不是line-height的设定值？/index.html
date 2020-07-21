@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            line-height: 30px;
+            /* font-size: 24px; */
+            /* 解决方法：设置字号和span的一样大 */
+        }
+        
+        span {
+            font-size: 24px;
+            vertical-align: top;
+            /* 或者改变垂直对齐方式 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 因为幽灵空白节点（相当于span外的x）的字号为默认值14px，
+        字号小，又line-height的值都为30px，则基线以下的区域就大 -->
+    <div>
+        x<span>文字x</span>
+    </div>
+</body>
+
+</html>

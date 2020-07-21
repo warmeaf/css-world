@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.father{
+				/* 容器宽度设为0,内部inline-block元素为首选最小宽度 */
+				width: 0;
+				background-color: #AE34CF;
+				/* text-align: center; */
+			}
+			.child{
+				display: inline-block;
+				padding: 8px;
+				/* text-align: left; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="father">
+			<div class="child">
+				<!-- 居中显示利用的是包裹 -->
+				居中显示
+			</div>
+		</div>
+		<li></li>
+		<div class="father">
+			<div class="child" style="outline: 1px solid #333333;padding: 0;display: inline;">
+				<!-- 西方文字最小首选宽度 -->
+				love你love
+			</div>
+		</div>
+	</body>
+</html>

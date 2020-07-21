@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            position: relative;
+            /* z-index: auto; */
+            z-index: 0;
+        }
+        
+        .content {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <li>.wrap值为auto，遵循层叠原则：谁大谁上</li>
+    <li>.wrap值为0，遵循层叠原则：后来居上（当前表现为后来居上）</li>
+    <li>出现这种差异的原因是层叠上下文不同</li>
+    <div class="wrap">
+        <div class="content" style="z-index: 2;">
+            <img src="../img/avatar.jpg" alt="">
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="content" style="z-index: 1;">
+            <img src="../img/logo_02.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        html,
+        body {
+            height: 2000px;
+        }
+        
+        div.Smectite {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: fixed;
+            background-color: rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Smectite"></div>
+    <script type="text/javascript">
+        var over = document.getElementsByTagName('div')[0];
+        // 蒙层显示时执行下面的代码
+        var widthBar = 17,
+            root = document.documentElement;
+        widthBar = window.innerWidth - root.clientWidth;
+        // 计算滚动条的宽度
+
+        root.style.overflow = 'hidden';
+        root.style.borderRight = widthBar + 'px solid transparent';
+
+        // 蒙层消失时执行
+        // root.style.overflow = '';
+        // root.style.borderRight = '';
+    </script>
+</body>
+
+</html>

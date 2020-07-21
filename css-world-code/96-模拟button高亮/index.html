@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn-box {
+            width: 65px;
+        }
+        
+        button {
+            position: absolute;
+            clip: rect(0 0 0 0);
+        }
+        
+        .btn {
+            line-height: 20px;
+            padding: 10px;
+            display: block;
+            text-align: center;
+        }
+        
+        button:focus+.btn {
+            outline: 1px dotted Highlight;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn-box">
+        <button id="sub">提交</button>
+        <label for="sub" class="btn">提交</label>
+    </div>
+</body>
+
+</html>

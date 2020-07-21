@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 70px;
+            height: 70px;
+            background-color: coral;
+            position: absolute;
+            top: 200px;
+            font-size: 30px;
+            /* 字号越大，基线就越下移，img就越下移 */
+        }
+        
+        img {
+            margin-top: -10000px;
+            /* 内联元素imgmargin-top取负值，往上升，当达到一个值后就不再上升
+            与内联盒模型和vertical-align有关 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="logo_02.png" alt="">
+    </div>
+</body>
+
+</html>

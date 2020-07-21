@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap {
+            width: 400px;
+            height: 300px;
+            overflow-y: scroll;
+        }
+        
+         ::-webkit-scrollbar {
+            /* 血槽宽度 */
+            width: 8px;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            /* 拖动块 */
+            background-color: rgba(0, 0, 0, .3);
+            border-radius: 6px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            /* 背景条 */
+            background-color: #dddddd;
+            border-radius: 6px;
+        }
+        
+        #content {
+            height: 800px;
+            background-color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="content"></div>
+    </div>
+</body>
+
+</html>

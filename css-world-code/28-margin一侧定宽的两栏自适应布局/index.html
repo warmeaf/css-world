@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .box {
+            max-width: 500px;
+            height: 70px;
+            overflow: hidden;
+            border: 1px solid #000000;
+        }
+        /* img {
+            float: left;
+        }
+        
+        p {
+            margin-left: 90px;
+        }
+        
+        .right {
+            float: right;
+        }
+        
+        .left {
+            margin-left: 0;
+            margin-right: 90px;
+        } */
+        
+        img {
+            float: left;
+            margin-left: -70px;
+            /* margin-left取负值的作用？这个是关键 */
+        }
+        
+        .left {
+            float: left;
+            width: 100%;
+        }
+        
+        .left>p {
+            margin-right: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="logo_02.png">
+        <p>这是一段文字描述。这是一段文字描述。这是一段文字描述。这是一段文字描述。这是一段文字描述。</p>
+    </div>
+    <div class="box">
+        <img src="logo_02.png" class="right">
+        <p class="left">这是一段文字描述。这是一段文字描述。这是一段文字描述。这是一段文字描述。这是一段文字描述。</p>
+    </div>
+    <div class="box">
+        <div class="left">
+            <p>这是一段文字描述。这是一段文字描述。这是一段文字描述。这是一段文字描述。这是一段文字描述。</p>
+        </div>
+        <img src="logo_02.png">
+    </div>
+</body>
+
+</html>

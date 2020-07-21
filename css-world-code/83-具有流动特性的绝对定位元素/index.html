@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            height: 500px;
+            width: 500px;
+            border: 1px solid seagreen;
+            position: relative;
+        }
+        
+        .content {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            /* 具有流动特性的绝对定位元素 */
+            width: 200px;
+            height: 200px;
+            background-color: sienna;
+            margin: auto;
+            /* 居中 */
+        }
+        
+        .center {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: sienna;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* absolute和transform居中布局 */
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="content"></div>
+    </div>
+    <li></li>
+    <div class="wrap">
+        <div class="center"></div>
+    </div>
+    <!-- <div style="position: relative;">
+        <img style="position: absolute;left: 0px;right: 0px;" src="" alt="">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <div>
+    <div>
+        <div style="position: relative;">
+            <img style="position: absolute;left: 0px;right: 0px;" src="" alt="">
+        </div>        
+        <p></p>
+        <p></p>
+        <p></p>
+    </div> -->
+</body>
+
+</html>

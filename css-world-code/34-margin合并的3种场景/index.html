@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background-color: indianred;
+            margin: 1em 0;
+        }
+        
+        .son {
+            height: 50px;
+            background-color: khaki;
+        }
+    </style>
+</head>
+
+<body>
+    <div>1.相邻兄弟元素</div>
+    <p>第一行</p>
+    <p>第二行</p>
+    <a href="">aaaaa</a>
+    <div>2.父级和第一个/最后一个子元素</div>
+    <div class="father" style="margin-top: 80px;">
+        <div class="son">父元素设置margin-top，80px</div>
+    </div>
+    <div class="father">
+        <div class="son" style="margin-top: 80px;">子元素设置margin-top，80px</div>
+    </div>
+    <div class="father" style="margin-top: 80px;">
+        <div class="son" style="margin-top: 80px;">父子元素设置margin-top，80px</div>
+    </div>
+    <div>空块级元素margin合并</div>
+    <div class="wrap" style="overflow: hidden;">
+        <div class="content" style="margin: 1em 0;"></div>
+    </div>
+</body>
+
+</html>

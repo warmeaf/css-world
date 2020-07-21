@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 300px;
+            margin: 0px auto;
+        }
+        
+        .log {
+            background-color: cadetblue;
+            text-align: center;
+            font-size: 0px;
+            line-height: 40px;
+        }
+        
+        .log>span {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 20px;
+            vertical-align: middle;
+            background-color: coral;
+            color: #ffffff;
+            margin: 0px 50px;
+            padding: 2px 8px;
+            cursor: pointer;
+        }
+        
+        @media screen and (max-width: 480px) {
+            .log {
+                direction: rtl;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <li>span得是内联块级元素，如果是纯内联元素，改变流向不起作用，why？</li>
+    <li>对于文字等纯内联元素没啥变化</li>
+    <li>对于图片、inline-block元素、问号、加号等反向排列</li>
+    <div class="wrap">
+        <div class="log">
+            <span>确认</span>
+            <span>取消</span>
+        </div>
+    </div>
+</body>
+
+</html>

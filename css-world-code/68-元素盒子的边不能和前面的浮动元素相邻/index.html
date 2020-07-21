@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            width: 800px;
+        }
+        
+        li {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            margin-right: 10px;
+        }
+        
+        li:nth-of-type(3) {
+            clear: both;
+        }
+        
+        .c-l>li {
+            float: left;
+        }
+        
+        .c-r>li {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <p>元素盒子的边不能和前面的浮动元素相邻</p>
+    <ul class="c-l">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul class="c-r">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid #000000;
+            margin-top: 200px;
+            font-size: 0;
+        }
+        
+        span {
+            /* 由于幽灵空白节点，span元素的垂直区域为高80.8px */
+            /* 消除影响，只需设置div的font-size为0 */
+            padding: 50%;
+            background-color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span></span>
+    </div>
+</body>
+
+</html>

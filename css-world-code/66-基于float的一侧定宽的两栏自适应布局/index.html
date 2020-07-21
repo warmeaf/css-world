@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            max-width: 300px;
+            overflow: hidden;
+            /* 块级格式化上下文，消除浮动带来的高度塌陷问题 */
+        }
+        
+        .left {
+            float: left;
+            width: 70px;
+            height: 70px;
+        }
+        
+        .right {
+            margin-left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <img class="left" src="logo_02.png" alt="">
+        <div class="right">this is some text.</div>
+    </div>
+</body>
+
+</html>

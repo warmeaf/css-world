@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        .container {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .5);
+            font-size: 0;
+            text-align: center;
+            /* 让弹框水平居中 */
+        }
+        
+        .container:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            /* 让幽灵空白节点的基线处于元素垂直中心点的位置 */
+        }
+        
+        .blog {
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+            vertical-align: middle;
+            /* 让弹框垂直居中 */
+            background-color: #fff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="blog"></div>
+    </div>
+</body>
+
+</html>
